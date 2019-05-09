@@ -1,6 +1,15 @@
-.header {
+.headerUnactive {
   width: 100%;
-  background-color: #cccccc;
+  position: fixed;
+  z-index: 100;
+  background-color: transparent;
+}
+
+.headerActive {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #ffffff;
 }
 
 .wrapper {

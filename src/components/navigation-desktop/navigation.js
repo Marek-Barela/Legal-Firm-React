@@ -1,12 +1,14 @@
 import React from "react";
 import ListItem from '../list-item/listitem';
+import PropTypes from 'prop-types';
 import styles from './navigation.module.css';
 
-const Desktop = () => {
-  const { navList } = styles;
+const Desktop = ({ navActive }) => {
+  const { navIsActive, navIsUnactive } = styles;
+  const navStyles = navActive ? navIsActive : navIsUnactive;
   return (
     <nav>
-      <ul className={navList}>
+      <ul className={navStyles}>
         <ListItem text="Home" href="/#home" />
         <ListItem text="About" href="/#about" />
         <ListItem text="Feature" href="/#feature" />
@@ -18,5 +20,9 @@ const Desktop = () => {
     </nav>
   )
 };
+
+ListItem.propTypes = {
+  navList: PropTypes.bool.isRequired,
+}
 
 export default Desktop;

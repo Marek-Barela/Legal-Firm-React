@@ -1,0 +1,60 @@
+.heroContainer {
+  background-image: url("../../images/hero.jpg");
+  min-height: 100vh;
+  height: 750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100vh;
+  height: 750px;
+  width: 100%;
+  background-color: #333333;
+  opacity: 0.7;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.textContainer h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.7em;
+}
+
+.textContainer p {
+  width: 540px;
+  font-size: 22px;
+}
+
+.textContainer button {
+  width: 210px;
+  height: 51px;
+  margin-top: 10px;
+  font-size: 0.55em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d8ae76;
+  background-color: transparent;
+  border: 1px solid #d8ae76;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.textContainer button:hover {
+  color: #ffffff;
+  background-color: #d8ae76;
+}

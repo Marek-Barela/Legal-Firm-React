@@ -1,7 +1,17 @@
-.navList {
+.navIsActive {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  color: #000000;
+}
+
+.navIsUnactive {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #ffffff;
 }
