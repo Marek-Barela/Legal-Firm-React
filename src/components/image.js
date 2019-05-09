@@ -36,4 +36,21 @@ export const LogoLight = () => (
   />
 );
 
+export const TeamMemberOne = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "team-4.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 450) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+  />
+);
+
 
