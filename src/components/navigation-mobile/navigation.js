@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Favicon from '../favicon/favicon';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import styles from './navigation.module.css';
 
 class Mobile extends Component {
@@ -22,7 +24,7 @@ class Mobile extends Component {
           onClick={() => this.onPressMenuBtn()}
           className={navButton}
         >
-          x
+          <Favicon icon={faBars} />
         </button>
         <ul className={navigation}>
           <li>example</li>
