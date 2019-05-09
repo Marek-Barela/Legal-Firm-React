@@ -1,6 +1,5 @@
 .heroContainer {
   background-image: url("../../images/hero.jpg");
-  min-height: 100vh;
   height: 650px;
   background-size: cover;
   background-position: center center;
@@ -13,7 +12,6 @@
 
 .overlay {
   position: absolute;
-  min-height: 100vh;
   height: 650px;
   width: 100%;
   background-color: #333333;
