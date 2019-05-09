@@ -22,7 +22,7 @@ class Mobile extends Component {
           onClick={() => this.onPressMenuBtn()}
           className={navButton}
         >
-          press
+          x
         </button>
         <ul className={navigation}>
           <li>example</li>
