@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavigationDesktop from '../navigation-desktop/navigation';
+import NavigationMobile from '../navigation-mobile/navigation';
 import { LogoLight, LogoBlack } from '../image';
 import styles from './header.module.css';
 
@@ -45,7 +46,10 @@ class Header extends Component {
       <header className={header}>
         <div className={wrapper}>
           {scrolledNav ? <LogoBlack /> : <LogoLight />}
-          <NavigationDesktop navActive={scrolledNav} />
+          <nav>
+            <NavigationDesktop navActive={scrolledNav} />
+            <NavigationMobile />
+          </nav>
         </div>
       </header>
     )

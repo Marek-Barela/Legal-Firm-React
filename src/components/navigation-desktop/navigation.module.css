@@ -1,17 +1,27 @@
 .navIsActive {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  color: #000000;
+  display: none;
 }
 
 .navIsUnactive {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  color: #ffffff;
+  display: none;
+}
+
+@media (min-width: 950px) {
+  .navIsActive {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #000000;
+  }
+
+  .navIsUnactive {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #ffffff;
+  }
 }

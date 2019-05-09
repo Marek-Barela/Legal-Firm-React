@@ -1,0 +1,24 @@
+.navActive {
+  position: absolute;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.navUnactive {
+  margin: 0;
+  display: none;
+}
+
+.navButton {}
+
+@media (min-width: 950px) {
+  .navActive {
+    display: none;
+  }
+
+  .navButton {
+    display: none;
+  }
+}
