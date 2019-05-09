@@ -3,6 +3,7 @@
 }
 
 .wrapper {
+  position: relative;
   min-height: 600px;
   max-width: 1170px;
   padding: 0 15px;
