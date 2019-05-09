@@ -1,5 +1,5 @@
 import React from "react";
-import ListItem from '../list-item/listitem';
+import ListItem from '../list-item-desktop/listitem';  
 import PropTypes from 'prop-types';
 import styles from './navigation.module.css';
 

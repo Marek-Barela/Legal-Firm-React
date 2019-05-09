@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "gatsby"
-import style from './listitem.module.css';
 
-const ListItem = ({ text, href }) => {
-  const { listItem } = style;
+const ListItem = ({ text, href, listItem }) => {
   return (
     <li className={listItem}>
       <Link to={href}>
@@ -16,7 +14,8 @@ const ListItem = ({ text, href }) => {
 
 ListItem.propTypes = {
   text: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired
+  href: PropTypes.string.isRequired,
+  listItem: PropTypes.string
 }
 
 export default ListItem;

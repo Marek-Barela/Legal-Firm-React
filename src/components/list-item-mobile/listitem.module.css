@@ -1,0 +1,22 @@
+.listItem {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.listItem :hover {
+  background-color: #444444;
+}
+
+.listItem a {
+  width: 100%;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}

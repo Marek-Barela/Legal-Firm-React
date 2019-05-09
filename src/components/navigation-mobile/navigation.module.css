@@ -4,17 +4,21 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #333333;
-  width: 100%;
+  width: 80%;
   margin: 0;
-  display: flex;
+  height: 364px;
+  opacity: 1.0;
+  flex: 1;
   flex-direction: column;
   list-style-type: none;
   z-index: 110;
+  transition: height 0.5s, opacity 1s;
 }
 
 .navUnactive {
-  margin: 0;
-  display: none;
+  transition: height 1s, opacity 0.5s;
+  opacity: 0.0;
+  height: 0px;
 }
 
 .navButton {

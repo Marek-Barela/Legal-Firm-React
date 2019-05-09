@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Favicon from '../favicon/favicon';
+import ListItem from '../list-item-mobile/listitem';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import styles from './navigation.module.css';
 
@@ -17,7 +18,7 @@ class Mobile extends Component {
   render() {
     const { navOpen } = this.state;
     const { navActive, navUnactive, navButton } = styles;
-    const navigation = navOpen ? navActive : navUnactive;
+    const navigation = navOpen ? navActive : `${navActive} ${navUnactive}`;
     return (
       <>
         <button
@@ -27,9 +28,13 @@ class Mobile extends Component {
           <Favicon icon={faBars} />
         </button>
         <ul className={navigation}>
-          <li>example</li>
-          <li>example</li>
-          <li>example</li>
+          <ListItem text="Home" href="/#home" />
+          <ListItem text="About" href="/#about" />
+          <ListItem text="Feature" href="/#feature" />
+          <ListItem text="Team" href="/#team" />
+          <ListItem text="Why us" href="/#whyus" />
+          <ListItem text="Feedback" href="/#feedback" />
+          <ListItem text="Free consultation" href="/#consultation" />
         </ul>
       </>
     )
