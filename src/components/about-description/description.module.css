@@ -2,15 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .imgColumn {
-  width: 45%;
+  width: 100%;
 }
 
 .textColumn {
-  margin-left: 90px;
-  width: 55%;
+  margin: 0;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -23,13 +24,39 @@
 }
 
 .textColumn h2 {
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-family: 'Merriweather', serif;
   font-weight: lighter;
+  margin: 40px 0;
 }
 
 .textColumn p {
-  font-size: 18px;
+  font-size: 15px;
   color: #999999;
   margin: 0 0 20px 0;
+}
+
+@media (min-width: 650px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .imgColumn {
+    width: 45%;
+  }
+
+  .textColumn {
+    margin: 0 0 20px 90px;
+    width: 55%;
+  }
+}
+
+@media (min-width: 850px) {
+  .textColumn h2 {
+    font-size: 1.7em;
+  }
+
+  .textColumn p {
+    font-size: 18px;
+  }
 }

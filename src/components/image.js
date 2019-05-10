@@ -66,6 +66,6 @@ export const Sugnature = () => (
           }
         }
       `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
   />
 );

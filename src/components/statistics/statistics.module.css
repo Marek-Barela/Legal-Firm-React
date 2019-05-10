@@ -3,10 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -85px;
+  flex-wrap: wrap;
+  transform: translateY(-20%);
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  height: 170px;
   border-radius: 10px;
+}
+
+@media (min-width: 650px) {
+  .statistics {
+    transform: translateY(-35%);
+  }
+}
+
+@media (min-width: 950px) {
+  .statistics {
+    transform: translateY(-50%);
+  }
 }

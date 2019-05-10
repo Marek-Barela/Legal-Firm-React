@@ -1,7 +1,9 @@
 .statElement {
   font-size: 2.3em;
+  padding: 55px 0;
   color: #d8ae76;
-  width: 25%;
+  min-width: 100%;
+  max-width: 200px;
   display: flex;
   justify-content: center;
 }
@@ -25,4 +27,16 @@
   font-family: 'Merriweather', serif;
   font-size: 0.8em;
   letter-spacing: 1px;
+}
+
+@media (min-width: 650px) {
+  .statElement {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 950px) {
+  .statElement {
+    min-width: 25%;
+  }
 }

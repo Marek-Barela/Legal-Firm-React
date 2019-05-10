@@ -8,17 +8,19 @@
   margin: 0;
   height: 364px;
   opacity: 1.0;
+  visibility: visible;
   flex: 1;
   flex-direction: column;
   list-style-type: none;
   z-index: 110;
-  transition: height 0.5s, opacity 1s;
+  transition: height 0.5s, opacity 1s, visibility 1s;
 }
 
 .navUnactive {
-  transition: height 1s, opacity 0.5s;
+  transition: height 1s, opacity 0.5s, visibility 0.5s;
   opacity: 0.0;
   height: 0px;
+  visibility: hidden;
 }
 
 .navButton {
