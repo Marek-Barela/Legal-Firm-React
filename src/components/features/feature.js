@@ -6,7 +6,7 @@ import styles from './feature.module.css';
 const Features = () => {
   const { features, wrapper } = styles;
   return (
-    <section id="features" className={features}>
+    <section id="feature" className={features}>
       <div className={wrapper}>
         <SectionHeader
           headerText="Practice Areas"

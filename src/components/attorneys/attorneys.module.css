@@ -1,0 +1,9 @@
+.section {
+  background-color: #F9F9F9;
+}
+
+.wrapper {
+  padding: 120px 0;
+  max-width: 1170px;
+  margin: 0 auto;
+}
