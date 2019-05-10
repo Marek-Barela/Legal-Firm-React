@@ -1,0 +1,6 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 45px auto 0 auto;
+  max-width: 1170px;
+}
