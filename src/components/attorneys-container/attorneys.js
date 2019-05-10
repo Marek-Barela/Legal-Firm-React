@@ -10,7 +10,7 @@ const Attorneys = props => {
   const memberTwo = data.memberTwo.childImageSharp.fluid;
   const memberThree = data.memberThree.childImageSharp.fluid;
   return (
-    <div className={wrapper}>
+    <div className={`${wrapper} wow fadeInUp`}>
       <AttorneysMember
         image={memberOne}
         name="Mark Smith"

@@ -6,7 +6,7 @@ const SectionHeader = props => {
   const { headerText, description } = props;
   const { wrapper, header, paragraph, separator } = styles;
   return (
-    <div className={wrapper}>
+    <div className={`${wrapper} wow fadeInUp`}>
       <h2 className={header}>{headerText}</h2>
       <p className={paragraph}>{description}</p>
       <div className={separator}></div>

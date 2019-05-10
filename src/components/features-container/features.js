@@ -7,7 +7,7 @@ import styles from './features.module.css';
 const Features = () => {
   const { wrapper } = styles;
   return (
-    <div className={wrapper}>
+    <div className={`${wrapper} wow fadeInUp`}>
       <FeatureItem
         icon={faShieldAlt}
         headerText="Criminal Law"
