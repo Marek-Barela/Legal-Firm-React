@@ -10,11 +10,12 @@
   position: fixed;
   z-index: 100;
   background-color: #ffffff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .wrapper {
   max-width: 1170px;
-  padding: 0 15px;
+  padding: 0 25px;
   height: 100px;
   margin: 0 auto;
   display: flex;

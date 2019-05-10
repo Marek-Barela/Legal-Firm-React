@@ -1,0 +1,24 @@
+.statistics {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translateY(-20%);
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media (min-width: 650px) {
+  .statistics {
+    transform: translateY(-35%);
+  }
+}
+
+@media (min-width: 950px) {
+  .statistics {
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,42 @@
+.statElement {
+  font-size: 2.3em;
+  padding: 55px 0;
+  color: #d8ae76;
+  min-width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.statTextContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.counter {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.label {
+  color: #9b9b9b;
+  font-family: 'Merriweather', serif;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 650px) {
+  .statElement {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 950px) {
+  .statElement {
+    min-width: 25%;
+  }
+}

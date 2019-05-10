@@ -1,0 +1,11 @@
+.about {
+  background-color: #F9F9F9;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 600px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

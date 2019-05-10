@@ -6,7 +6,7 @@ import styles from './navigation.module.css';
 
 class Mobile extends Component {
   state = {
-    navOpen: true
+    navOpen: false
   }
 
   onPressMenuBtn = () => {

@@ -16,6 +16,10 @@
     color: #000000;
   }
 
+  .navIsActive :hover {
+    color: #d8ae76;
+  }
+
   .navIsUnactive {
     display: flex;
     align-items: center;
@@ -23,5 +27,9 @@
     padding: 0;
     list-style-type: none;
     color: #ffffff;
+  }
+
+  .navIsUnactive :hover {
+    color: #d8ae76;
   }
 }
