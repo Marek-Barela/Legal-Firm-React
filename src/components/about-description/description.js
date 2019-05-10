@@ -41,7 +41,7 @@ export default props => (
           }
           signature: file(relativePath: { eq: "signture.png" }) {
             childImageSharp {
-              fixed(width: 105) {
+              fixed(width: 94) {
                 ...GatsbyImageSharpFixed
               }
             }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Header from "../header/header";
-import Footer from '../footer/footer';
 import WOW from 'wowjs';
 import "./layout.css";
 
@@ -21,7 +20,6 @@ class Layout extends Component {
         <main>
           {children}
         </main>
-        {/** <Footer />*/}
       </>
     )
   }

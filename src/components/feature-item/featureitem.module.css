@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.ico {
+  color: #d8ae76;
+  width: 45px !important;
+  height: 45px;
+}
+
+.textWrapper {
+  margin-left: 30px;
+}
+
+.header {
+  color: #363636;
+  font-family: 'Merriweather', serif;
+  font-size: 0.9em;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  color: #777777;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@media (min-width: 950px) {
+  .wrapper {
+    width: 33.33%
+  }
+}
