@@ -8,11 +8,11 @@ const Hero = () => {
       <div className={heroContainer}>
         <div className={overlay}></div>
         <div className={textContainer}>
-          <h1>Welcome To Legal Firm</h1>
-          <p>
+          <h1 className="wow slideInLeft">Welcome To Legal Firm</h1>
+          <p className="wow slideInRight">
             This should be used to tell a story and let your users know a little more about your service.
-        </p>
-          <button>free consultation</button>
+          </p>
+          <button className="wow slideInUp">free consultation</button>
         </div>
       </div>
     </section>

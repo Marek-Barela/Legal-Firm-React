@@ -27,6 +27,10 @@ function SEO({ description, lang, meta, keywords, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[{
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+      }]}
       meta={[
         {
           name: `description`,
