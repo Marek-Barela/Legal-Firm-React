@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  width: 33.33%;
+  width: 100%;
   padding: 0 15px;
   margin-bottom: 50px;
 }
@@ -29,4 +29,10 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+}
+
+@media (min-width: 950px) {
+  .wrapper {
+    width: 33.33%
+  }
 }
