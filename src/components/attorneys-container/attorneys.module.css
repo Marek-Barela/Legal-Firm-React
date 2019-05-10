@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 760px) {
+  .wrapper {
+    flex-wrap: nowrap;
+  }
+}
