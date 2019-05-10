@@ -53,4 +53,19 @@ export const TeamMemberOne = () => (
   />
 );
 
-
+export const Sugnature = () => (
+  <StaticQuery
+    query={graphql`
+        query {
+          placeholderImage: file(relativePath: { eq: "signture.png" }) {
+            childImageSharp {
+              fixed(width: 105) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      `}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+  />
+);

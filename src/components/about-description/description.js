@@ -1,5 +1,5 @@
 import React from 'react';
-import { TeamMemberOne } from '../image';
+import { TeamMemberOne, Sugnature } from '../image';
 import styles from './description.module.css';
 
 const AboutDescription = () => {
@@ -18,6 +18,7 @@ const AboutDescription = () => {
         <p>
           Euis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida.
         </p>
+        <Sugnature />
       </div>
     </div>
   )
