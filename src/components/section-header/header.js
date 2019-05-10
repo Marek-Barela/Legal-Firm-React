@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './header.module.css';
 
 const SectionHeader = props => {
@@ -11,6 +12,11 @@ const SectionHeader = props => {
       <div className={separator}></div>
     </div>
   )
+}
+
+SectionHeader.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default SectionHeader;
