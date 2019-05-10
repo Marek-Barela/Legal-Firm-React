@@ -1,7 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px;
+}
+
 .wrapper {
   position: relative;
-  width: 33.33%;
-  margin: 15px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .layer {
@@ -17,6 +26,26 @@
   background-color: #d8ae76;
   opacity: 0.9;
   transition: all 0.3s;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textContainer h3 {
+  font-size: 20px;
+  color: #363636;
+  margin: 20px 0 0 0;
+}
+
+.textContainer span {
+  color: #999999;
+  font-size: 13px;
+  line-height: 18px;
+  font-style: italic;
 }
 
 .wrapper:hover>.layer {
@@ -98,5 +127,11 @@
     width: 0px;
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@media (min-width: 760px) {
+  .container {
+    width: 100%;
   }
 }

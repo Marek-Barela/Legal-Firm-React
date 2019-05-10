@@ -13,6 +13,8 @@ const Attorneys = props => {
     <div className={wrapper}>
       <AttorneysMember
         image={memberOne}
+        name="Mark Smith"
+        role="CEO & Manager"
         facebookUrl="https://www.facebook.com"
         googleUrl="https://www.plus.google.com"
         twitterUrl="https://www.twitter.com"
@@ -20,6 +22,8 @@ const Attorneys = props => {
       />
       <AttorneysMember
         image={memberTwo}
+        name="Ryan Printz"
+        role="Family Lawyer"
         facebookUrl="https://www.facebook.com"
         googleUrl="https://www.plus.google.com"
         twitterUrl="https://www.twitter.com"
@@ -27,6 +31,8 @@ const Attorneys = props => {
       />
       <AttorneysMember
         image={memberThree}
+        name="Steve Martin"
+        role="Financial Lawyer"
         facebookUrl="https://www.facebook.com"
         googleUrl="https://www.plus.google.com"
         twitterUrl="https://www.twitter.com"
