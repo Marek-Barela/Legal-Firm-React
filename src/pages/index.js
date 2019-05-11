@@ -5,7 +5,8 @@ import About from "../components/about/about";
 import Features from '../components/features/feature';
 import Attorneys from '../components/attorneys/attorneys';
 import HireUs from '../components/hire-us/hireus';
-import Consultation from '../components/consultation/consultation'
+import Testimonials from '../components/testimonials/testimonials';
+import Consultation from '../components/consultation/consultation';
 import SEO from "../components/seo";
 
 const IndexPage = () => {
@@ -17,6 +18,7 @@ const IndexPage = () => {
       <Features />
       <Attorneys />
       <HireUs />
+      <Testimonials />
       <Consultation />
     </Layout>
   )
