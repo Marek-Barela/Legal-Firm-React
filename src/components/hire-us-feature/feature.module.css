@@ -1,6 +1,9 @@
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding-right: 15px;
+  padding-right: 25px;
   margin: 0 0 45px 0;
 }
 
@@ -20,6 +23,7 @@
   font-size: 0.8em;
   font-weight: lighter;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .paragraph {
@@ -27,10 +31,21 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 800px) {
   .wrapper {
+    align-items: flex-start;
     width: 50%;
   }
+
+  .header {
+    text-align: left;
+  }
+
+  .paragraph {
+    text-align: left;
+  }
+
 }
