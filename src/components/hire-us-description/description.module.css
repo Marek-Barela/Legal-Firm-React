@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 100px 50px 100px 100px;
+  width: 100%;
+}
+
+.headerText {
+  font-family: 'Merriweather', serif;
+  font-weight: lighter;
+}
+
+.paragraphText {
+  color: #999999;
+  font-size: 18px;
+}
+
+.separator {
+  width: 50px;
+  height: 1px;
+  background-color: #d8ae76;
+  margin-bottom: 50px;
+}
+
+.featuresContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 960px) {
+  .wrapper {
+    width: 60%;
+  }
+}

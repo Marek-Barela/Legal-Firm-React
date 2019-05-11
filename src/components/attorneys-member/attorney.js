@@ -7,7 +7,7 @@ import { faFacebookF, faGooglePlusG, faTwitter, faLinkedinIn } from '@fortawesom
 
 const AttorneysMember = props => {
   const { container, wrapper, layer, textContainer } = styles;
-  const { image, name, role, facebookUrl, googleUrl, twitterUrl, LinkedinUrl } = props;
+  const { image, name, position, facebookUrl, googleUrl, twitterUrl, LinkedinUrl } = props;
   return (
     <div className={container}>
       <div className={wrapper}>
@@ -21,7 +21,7 @@ const AttorneysMember = props => {
       </div>
       <div className={textContainer}>
         <h3>{name}</h3>
-        <span>{role}</span>
+        <span>{position}</span>
       </div>
     </div>
   )
@@ -30,7 +30,7 @@ const AttorneysMember = props => {
 AttorneysMember.propTypes = {
   image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
   facebookUrl: PropTypes.string.isRequired,
   googleUrl: PropTypes.string.isRequired,
   twitterUrl: PropTypes.string.isRequired,

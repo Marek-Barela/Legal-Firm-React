@@ -14,7 +14,7 @@ const Attorneys = props => {
       <AttorneysMember
         image={memberOne}
         name="Mark Smith"
-        role="CEO & Manager"
+        position="CEO & Manager"
         facebookUrl="https://www.facebook.com"
         googleUrl="https://www.plus.google.com"
         twitterUrl="https://www.twitter.com"
@@ -23,7 +23,7 @@ const Attorneys = props => {
       <AttorneysMember
         image={memberTwo}
         name="Ryan Printz"
-        role="Family Lawyer"
+        position="Family Lawyer"
         facebookUrl="https://www.facebook.com"
         googleUrl="https://www.plus.google.com"
         twitterUrl="https://www.twitter.com"
@@ -32,7 +32,7 @@ const Attorneys = props => {
       <AttorneysMember
         image={memberThree}
         name="Steve Martin"
-        role="Financial Lawyer"
+        position="Financial Lawyer"
         facebookUrl="https://www.facebook.com"
         googleUrl="https://www.plus.google.com"
         twitterUrl="https://www.twitter.com"
