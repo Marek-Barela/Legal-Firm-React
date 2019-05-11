@@ -1,3 +1,14 @@
 .wrapper {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .wrapper {
+    flex-direction: row;
+  }
 }

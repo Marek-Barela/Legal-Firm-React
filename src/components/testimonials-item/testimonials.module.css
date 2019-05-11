@@ -1,7 +1,7 @@
 .wrapper {
   margin-top: 50px;
   min-height: 100px;
-  width: 33.33%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,4 +27,16 @@
 .wrapper span {
   font-size: 15px;
   font-weight: bold;
+}
+
+@media (min-width: 550px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 950px) {
+  .wrapper {
+    width: 33.33%;
+  }
 }
