@@ -6,3 +6,12 @@
   padding: 100px;
   width: 60%;
 }
+
+.imageContainer {
+  background-image: url("../../images/bg-2.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  width: 40%;
+}
