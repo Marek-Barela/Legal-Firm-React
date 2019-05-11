@@ -1,11 +1,23 @@
 .wrapper {
-  padding: 100px 50px 100px 100px;
+  padding: 50px 30px;
   width: 100%;
 }
 
 .featuresContainer {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width: 450px) {
+  .wrapper {
+    padding: 50px 80px;
+  }
+}
+
+@media (min-width: 650px) {
+  .wrapper {
+    padding: 100px 50px 100px 100px;
+  }
 }
 
 @media (min-width: 960px) {
