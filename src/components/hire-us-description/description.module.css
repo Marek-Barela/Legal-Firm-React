@@ -3,23 +3,6 @@
   width: 100%;
 }
 
-.headerText {
-  font-family: 'Merriweather', serif;
-  font-weight: lighter;
-}
-
-.paragraphText {
-  color: #999999;
-  font-size: 18px;
-}
-
-.separator {
-  width: 50px;
-  height: 1px;
-  background-color: #d8ae76;
-  margin-bottom: 50px;
-}
-
 .featuresContainer {
   display: flex;
   flex-wrap: wrap;
