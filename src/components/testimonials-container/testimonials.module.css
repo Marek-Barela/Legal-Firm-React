@@ -1,1 +1,3 @@
-.wrapper {}
+.wrapper {
+  display: flex;
+}

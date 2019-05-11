@@ -12,12 +12,18 @@ const TestimonialsContainer = ({ data }) => {
     <div className={wrapper}>
       <TestimonialItem
         image={userOne}
+        text="“Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands.”"
+        author="- Mark Smith"
       />
       <TestimonialItem
         image={userTwo}
+        text="“Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands.”"
+        author="-  Maya Jonson"
       />
       <TestimonialItem
         image={userThree}
+        text="“Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands.”"
+        author="-  Steve Martin"
       />
     </div>
   )
