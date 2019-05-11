@@ -9,7 +9,7 @@ const TestimonialsContainer = ({ data }) => {
   const userTwo = data.userTwo.childImageSharp.fluid;
   const userThree = data.userThree.childImageSharp.fluid;
   return (
-    <div className={wrapper}>
+    <div className={`${wrapper} wow fadeInUp`}>
       <TestimonialItem
         image={userOne}
         text="“Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands.”"
