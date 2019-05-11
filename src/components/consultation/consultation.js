@@ -139,7 +139,7 @@ class Consultation extends Component {
               <span className={textareaSpan}>{messageTextError}</span>
               <button type="submit">send request</button>
             </form>
-            {displaySuccess && <p className={successMessage}>you form successfully sent</p>}
+            {displaySuccess && <p className={successMessage}>your form successfully sent</p>}
           </div>
           <div className={imageContainer}></div>
         </div>
