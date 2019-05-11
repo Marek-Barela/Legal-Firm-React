@@ -22,11 +22,12 @@
   flex-direction: column;
 }
 
-.inputWrapper {
+.inputContainer {
+  position: relative;
   display: flex;
 }
 
-.inputWrapper input,
+.inputContainer input,
 .form select,
 .textarea {
   color: #555555;
@@ -36,20 +37,41 @@
   border: none;
   padding: 8px 8px 8px 24px;
   font-size: 0.65em;
-  margin-bottom: 20px;
   outline: 0;
 }
 
-.inputWrapper input {
-  width: 50%;
+.inputContainer input {
+  width: 95%;
 }
 
-.inputWrapper input:first-child {
-  margin-right: 30px;
+.inputContainer span,
+.textareaSpan {
+  font-size: 0.6em;
+  color: red;
+  text-align: center;
+  width: 95%;
+  height: 35px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputWrapperSecond {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .form select {
   width: 100%;
+  margin-bottom: 35px;
 }
 
 .textarea {
@@ -77,4 +99,8 @@
 
 .form button:hover {
   background-color: #ca9d62;
+}
+
+.error {
+  border: 1px solid red !important;
 }
