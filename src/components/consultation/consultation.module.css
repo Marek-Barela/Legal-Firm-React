@@ -101,6 +101,16 @@
   background-color: #ca9d62;
 }
 
+.successMessage {
+  color: #64b450;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
 .error {
   border: 1px solid red !important;
 }

@@ -12,7 +12,8 @@ class Consultation extends Component {
       user: "",
       email: "",
       message: ""
-    }
+    },
+    displaySuccess: false
   }
 
   isEmpty = (str) => {
@@ -55,8 +56,11 @@ class Consultation extends Component {
   }
 
   sendMessage() {
+    this.setState({
+      displaySuccess: true
+    })
     /**
-     * Send message to server here
+     * Sent message to server here
      */
   }
 
@@ -78,9 +82,10 @@ class Consultation extends Component {
       inputWrapperSecond,
       textarea,
       error,
-      textareaSpan
+      textareaSpan,
+      successMessage
     } = styles;
-    const { user, email, subject, message, formErrors } = this.state;
+    const { user, email, subject, message, formErrors, displaySuccess } = this.state;
     const userTextError = formErrors.user;
     const emailTextError = formErrors.email;
     const messageTextError = formErrors.message;
@@ -133,6 +138,7 @@ class Consultation extends Component {
               <span className={textareaSpan}>{messageTextError}</span>
               <button type="submit">send request</button>
             </form>
+            {displaySuccess && <p className={successMessage}>you form successfully sent</p>}
           </div>
           <div className={imageContainer}></div>
         </div>
