@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import FeatureItem from '../feature-item/featureitem';
 import { faShieldAlt, faLandmark, faHandshake, faHandHoldingUsd, faMoneyBill, faBookReader } from '@fortawesome/free-solid-svg-icons';
 
