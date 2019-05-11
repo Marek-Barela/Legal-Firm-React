@@ -48,7 +48,8 @@ class Consultation extends Component {
     e.preventDefault();
     const errors = this.checkValidation();
     this.setState({
-      formErrors: errors
+      formErrors: errors,
+      displaySuccess: false
     })
     if (!Object.keys(errors).length) {
       this.sendMessage()
