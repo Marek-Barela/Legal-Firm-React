@@ -1,16 +1,18 @@
-import React from 'react'
-import styles from './description.module.css';
+import React from 'react';
+import SectionHeader from '../section-header-left/header';
 import FeatureItem from '../hire-us-feature/feature';
+import styles from './description.module.css';
 import { faBookOpen, faHandshake, faShieldAlt, faBalanceScale } from '@fortawesome/free-solid-svg-icons';
 
 const HireUsDescription = () => {
-  const { wrapper, headerText, paragraphText, separator, featuresContainer } = styles;
+  const { wrapper, featuresContainer } = styles;
   return (
     <div className={`${wrapper} wow fadeInRight`}>
       <div>
-        <h2 className={headerText}>Why Hire Us ?</h2>
-        <p className={paragraphText}>Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod tempor incidide labeore dolore magna.</p>
-        <div className={separator}></div>
+        <SectionHeader
+          header="Why Hire Us ?"
+          paragraph="Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod tempor incidide labeore dolore magna."
+        />
       </div>
       <div className={featuresContainer}>
         <FeatureItem
