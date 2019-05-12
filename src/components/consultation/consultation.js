@@ -107,8 +107,10 @@ class Consultation extends Component {
             <form onSubmit={(e) => this.onHandleSubmit(e)} className={form} noValidate>
               <div className={inputContainer}>
                 <div className={inputWrapper}>
+                  <label for="name">name</label>
                   <input
                     className={userTextError ? error : ""}
+                    id="name"
                     name="user"
                     type="name"
                     placeholder="Your Name"
@@ -118,8 +120,10 @@ class Consultation extends Component {
                   <span>{userTextError}</span>
                 </div>
                 <div className={inputWrapperSecond}>
+                  <label for="email">email</label>
                   <input
                     className={emailTextError ? error : ""}
+                    id="email"
                     name="email"
                     type="email"
                     placeholder="Your Email"
@@ -129,14 +133,22 @@ class Consultation extends Component {
                   <span>{emailTextError}</span>
                 </div>
               </div>
-              <select name="subject" onChange={(e) => this.onHandleChange(e)} value={subject}>
+              <label for="subject">subject</label>
+              <select
+                name="subject"
+                id="subject"
+                onChange={(e) => this.onHandleChange(e)}
+                value={subject}
+              >
                 <option value="1">Practive Area</option>
                 <option value="2">Criminal Law</option>
                 <option value="3">International Law</option>
                 <option value="4">Financial Law</option>
               </select>
+              <label for="textarea">message</label>
               <textarea
                 className={messageTextError ? `${textarea}  ${error}` : textarea}
+                id="textarea"
                 name="message"
                 placeholder="Your Message"
                 onChange={(e) => this.onHandleChange(e)}
