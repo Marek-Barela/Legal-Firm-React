@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import TestimonialItem from '../testimonials-item/testimonials';
 import { StaticQuery, graphql } from "gatsby";
 import styles from './testimonials.module.css';
@@ -9,7 +10,12 @@ const TestimonialsContainer = ({ data }) => {
   const userTwo = data.userTwo.childImageSharp.fluid;
   const userThree = data.userThree.childImageSharp.fluid;
   return (
-    <div className={`${wrapper} wow fadeInUp`}>
+    <ScrollAnimation
+      animateIn='slideInUp'
+      className={wrapper}
+      initiallyVisible={false}
+      animateOnce={true}
+    >
       <TestimonialItem
         image={userOne}
         text="“Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands.”"
@@ -25,7 +31,7 @@ const TestimonialsContainer = ({ data }) => {
         text="“Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands.”"
         author="-  Steve Martin"
       />
-    </div>
+    </ScrollAnimation>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import styles from './hero.module.css';
 
 const Hero = () => {
@@ -7,15 +8,19 @@ const Hero = () => {
     <section id="home">
       <div className={heroContainer}>
         <div className={overlay}></div>
-        <div className={textContainer}>
-          <h1 className="wow slideInLeft">Welcome To Legal Firm</h1>
-          <p className="wow slideInRight">
+        <ScrollAnimation animateIn='bounceInUp'
+          className={textContainer}
+          initiallyVisible={false}
+          animateOnce={true}
+        >
+          <h1>Welcome To Legal Firm</h1>
+          <p>
             This should be used to tell a story and let your users know a little more about your service.
           </p>
           <a href="#consultation">
-            <button className="wow slideInUp">free consultation</button>
+            <button>free consultation</button>
           </a>
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   )

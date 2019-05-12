@@ -1,5 +1,6 @@
 import React from 'react';
 import FeatureItem from '../feature-item/featureitem';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { faShieldAlt, faLandmark, faHandshake, faHandHoldingUsd, faMoneyBill, faBookReader } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './features.module.css';
@@ -7,7 +8,12 @@ import styles from './features.module.css';
 const Features = () => {
   const { wrapper } = styles;
   return (
-    <div className={`${wrapper} wow fadeInUp`}>
+    <ScrollAnimation
+      animateIn='slideInUp'
+      className={wrapper}
+      initiallyVisible={false}
+      animateOnce={true}
+    >
       <FeatureItem
         icon={faShieldAlt}
         headerText="Criminal Law"
@@ -38,7 +44,7 @@ const Features = () => {
         headerText="Technology Law"
         paragraphText="Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide."
       />
-    </div>
+    </ScrollAnimation>
   )
 }
 

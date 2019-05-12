@@ -1,5 +1,6 @@
 import React from 'react';
 import AttorneysMember from '../attorneys-member/attorney';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { StaticQuery, graphql } from "gatsby";
 import styles from './attorneys.module.css';
 
@@ -10,7 +11,12 @@ const Attorneys = props => {
   const memberTwo = data.memberTwo.childImageSharp.fluid;
   const memberThree = data.memberThree.childImageSharp.fluid;
   return (
-    <div className={`${wrapper} wow fadeInUp`}>
+    <ScrollAnimation
+      animateIn='slideInUp'
+      className={wrapper}
+      initiallyVisible={false}
+      animateOnce={true}
+    >
       <AttorneysMember
         image={memberOne}
         name="Mark Smith"
@@ -38,7 +44,7 @@ const Attorneys = props => {
         twitterUrl="https://www.twitter.com"
         LinkedinUrl="https://www.linkedin.com"
       />
-    </div>
+    </ScrollAnimation>
   )
 }
 

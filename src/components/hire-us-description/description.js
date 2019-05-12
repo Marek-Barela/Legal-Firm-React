@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import SectionHeader from '../section-header-left/header';
 import FeatureItem from '../hire-us-feature/feature';
 import styles from './description.module.css';
@@ -7,13 +8,16 @@ import { faBookOpen, faHandshake, faShieldAlt, faBalanceScale } from '@fortaweso
 const HireUsDescription = () => {
   const { wrapper, featuresContainer } = styles;
   return (
-    <div className={`${wrapper} wow fadeInRight`}>
-      <div>
-        <SectionHeader
-          header="Why Hire Us ?"
-          paragraph="Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod tempor incidide labeore dolore magna."
-        />
-      </div>
+    <ScrollAnimation
+      animateIn='slideInUp'
+      className={wrapper}
+      initiallyVisible={false}
+      animateOnce={true}
+    >
+      <SectionHeader
+        header="Why Hire Us ?"
+        paragraph="Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod tempor incidide labeore dolore magna."
+      />
       <div className={featuresContainer}>
         <FeatureItem
           icon={faBookOpen}
@@ -36,7 +40,7 @@ const HireUsDescription = () => {
           paragraphText="Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide."
         />
       </div>
-    </div>
+    </ScrollAnimation>
   )
 }
 

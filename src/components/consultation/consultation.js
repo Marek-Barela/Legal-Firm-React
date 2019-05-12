@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import SectionHeader from '../section-header-left/header';
 import styles from './consultation.module.css';
 
@@ -93,7 +94,12 @@ class Consultation extends Component {
     return (
       <section id="consultation">
         <div className={wrapper}>
-          <div className={`${formContainer} wow fadeInLeft`}>
+          <ScrollAnimation
+            animateIn='slideInUp'
+            className={formContainer}
+            initiallyVisible={false}
+            animateOnce={true}
+          >
             <SectionHeader
               header="Free Consultation"
               paragraph="Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod tempor incidide labeore dolore magna."
@@ -140,7 +146,7 @@ class Consultation extends Component {
               <button type="submit">send request</button>
             </form>
             {displaySuccess && <p className={successMessage}>your form successfully sent</p>}
-          </div>
+          </ScrollAnimation>
           <div className={`${imageContainer} wow fadeInRight`}></div>
         </div>
       </section>

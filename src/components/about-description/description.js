@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import styles from './description.module.css';
@@ -10,10 +11,15 @@ const AboutDescription = props => {
   const signature = data.signature.childImageSharp.fixed;
   return (
     <div className={wrapper}>
-      <div className={`${imgColumn} wow slideInLeft`} >
+      <div className={imgColumn}>
         <Img fluid={member} />
       </div>
-      <div className={`${textColumn} wow slideInRight`}>
+      <ScrollAnimation
+        animateIn='slideInUp'
+        className={textColumn}
+        initiallyVisible={false}
+        animateOnce={true}
+      >
         <h2>About Our Firm</h2>
         <span></span>
         <p>
@@ -23,7 +29,7 @@ const AboutDescription = props => {
           Euis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida.
         </p>
         <Img fixed={signature} />
-      </div>
+      </ScrollAnimation>
     </div>
   )
 }
