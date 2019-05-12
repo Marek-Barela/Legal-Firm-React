@@ -12,7 +12,7 @@ const Attorneys = props => {
   const memberThree = data.memberThree.childImageSharp.fluid;
   return (
     <ScrollAnimation
-      animateIn='slideInUp'
+      animateIn='fadeInUp'
       className={wrapper}
       initiallyVisible={false}
       animateOnce={true}

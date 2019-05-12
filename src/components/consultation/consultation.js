@@ -95,7 +95,7 @@ class Consultation extends Component {
       <section id="consultation">
         <div className={wrapper}>
           <ScrollAnimation
-            animateIn='slideInUp'
+            animateIn='fadeInLeft'
             className={formContainer}
             initiallyVisible={false}
             animateOnce={true}

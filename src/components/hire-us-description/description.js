@@ -9,7 +9,7 @@ const HireUsDescription = () => {
   const { wrapper, featuresContainer } = styles;
   return (
     <ScrollAnimation
-      animateIn='slideInUp'
+      animateIn='fadeInRight'
       className={wrapper}
       initiallyVisible={false}
       animateOnce={true}

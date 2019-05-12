@@ -11,7 +11,7 @@ const TestimonialsContainer = ({ data }) => {
   const userThree = data.userThree.childImageSharp.fluid;
   return (
     <ScrollAnimation
-      animateIn='slideInUp'
+      animateIn='fadeInUp'
       className={wrapper}
       initiallyVisible={false}
       animateOnce={true}

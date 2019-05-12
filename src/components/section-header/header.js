@@ -8,7 +8,7 @@ const SectionHeader = props => {
   const { wrapper, header, paragraph, separator } = styles;
   return (
     <ScrollAnimation
-      animateIn='slideInUp'
+      animateIn='fadeInUp'
       className={wrapper}
       initiallyVisible={false}
       animateOnce={true}

@@ -9,7 +9,7 @@ const Features = () => {
   const { wrapper } = styles;
   return (
     <ScrollAnimation
-      animateIn='slideInUp'
+      animateIn='fadeInUp'
       className={wrapper}
       initiallyVisible={false}
       animateOnce={true}

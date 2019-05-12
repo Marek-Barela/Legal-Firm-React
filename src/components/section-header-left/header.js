@@ -7,7 +7,7 @@ const Header = props => {
   const { headerText, paragraphText, separator } = styles;
   return (
     <ScrollAnimation
-      animateIn='slideInUp'
+      animateIn='fadeInUp'
       initiallyVisible={false}
       animateOnce={true}
     >

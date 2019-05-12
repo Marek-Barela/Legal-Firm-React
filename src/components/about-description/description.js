@@ -15,7 +15,7 @@ const AboutDescription = props => {
         <Img fluid={member} />
       </div>
       <ScrollAnimation
-        animateIn='slideInUp'
+        animateIn='fadeInRight'
         className={textColumn}
         initiallyVisible={false}
         animateOnce={true}
