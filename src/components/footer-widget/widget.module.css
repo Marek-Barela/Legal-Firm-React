@@ -1,0 +1,64 @@
+.wrapper {
+  color: #bdbdbd;
+  margin: 0 auto;
+  padding: 80px 0;
+  max-width: 1170px;
+  display: flex;
+}
+
+.widgetContent {
+  width: 50%
+}
+
+.widgetContact {
+  width: 50%
+}
+
+.widgetParagraph {
+  font-size: 0.65em;
+  line-height: 30px;
+  margin: 25px 0;
+  width: 70%;
+}
+
+.mediaWrapper {
+  display: flex;
+}
+
+.mediaWrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  transition: color 0.4s;
+}
+
+.mediaWrapper a:hover {
+  color: #ca9d62;
+}
+
+.widgetContact h4 {
+  margin: 0 0 15px 0;
+  font-family: 'Merriweather', serif;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer [class*="fa"] {
+  color: #ca9d62;
+  width: 30px;
+  height: 30px;
+}
+
+.contactContainer p {
+  margin-left: 25px;
+}
