@@ -89,8 +89,8 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #d8ae76;
-  border: 1px solid #d8ae76;
+  background-color: #a87b43;
+  border: 1px solid #a87b43;
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -99,7 +99,7 @@
 }
 
 .form button:hover {
-  background-color: #ca9d62;
+  background-color: #976a32;
 }
 
 .successMessage {

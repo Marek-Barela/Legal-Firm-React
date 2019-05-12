@@ -44,9 +44,9 @@
   font-size: 0.55em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #d8ae76;
+  color: #a87b43;
   background-color: transparent;
-  border: 1px solid #d8ae76;
+  border: 1px solid #a87b43;
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -56,7 +56,7 @@
 
 .textContainer button:hover {
   color: #ffffff;
-  background-color: #d8ae76;
+  background-color: #a87b43;
 }
 
 @media (min-width: 500px) {
