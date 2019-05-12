@@ -22,6 +22,7 @@ class Mobile extends Component {
     return (
       <>
         <button
+          aria-label="menu"
           onClick={() => this.onPressMenuBtn()}
           className={navButton}
         >

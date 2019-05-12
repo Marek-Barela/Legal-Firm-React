@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Anchor = props => {
   const { url, ico } = props;
   return (
-    <a href={url} name="media" target="_blank" rel="noopener noreferrer">
+    <a href={url} aria-label="media" target="_blank" rel="noopener noreferrer">
       <Favicon icon={ico} />
     </a>
   )

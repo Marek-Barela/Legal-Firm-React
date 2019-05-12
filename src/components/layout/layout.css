@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url('../../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Merriweather', serif;
+  src: url('../../fonts/Merriweather/Merriweather-Regular.ttf');
+}
 
 html {
   font-family: sans-serif;
