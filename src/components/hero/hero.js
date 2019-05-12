@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './hero.module.css';
-import { Link } from "gatsby";
 
 const Hero = () => {
   const { heroContainer, overlay, textContainer } = styles;
@@ -13,9 +12,9 @@ const Hero = () => {
           <p className="wow slideInRight">
             This should be used to tell a story and let your users know a little more about your service.
           </p>
-          <Link to="#consultation">
+          <a href="#consultation">
             <button className="wow slideInUp">free consultation</button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

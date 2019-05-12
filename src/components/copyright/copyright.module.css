@@ -1,0 +1,12 @@
+.wrapper {
+  height: 100px;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #272727;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+}

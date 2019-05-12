@@ -93,7 +93,7 @@ class Consultation extends Component {
     return (
       <section id="consultation">
         <div className={wrapper}>
-          <div className={formContainer}>
+          <div className={`${formContainer} wow fadeInLeft`}>
             <SectionHeader
               header="Free Consultation"
               paragraph="Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod tempor incidide labeore dolore magna."
@@ -141,7 +141,7 @@ class Consultation extends Component {
             </form>
             {displaySuccess && <p className={successMessage}>your form successfully sent</p>}
           </div>
-          <div className={imageContainer}></div>
+          <div className={`${imageContainer} wow fadeInRight`}></div>
         </div>
       </section>
     )
