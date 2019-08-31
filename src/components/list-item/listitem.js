@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 
 const ListItem = ({ text, href, listItem }) => {
   return (
-    <li className={listItem}>
+    <li className={listItem} style={{cursor: "pointer"}}>
       <Link to={href} spy={true} smooth={true} offset={0} duration={500}>
         {text}
       </Link>
