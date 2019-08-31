@@ -5,11 +5,6 @@ import Footer from '../footer/footer';
 import "animate.css/animate.min.css";
 import "./layout.css";
 
-
-if (typeof window !== "undefined") {
-  require("smooth-scroll")('a[href*="#"]')
-}
-
 class Layout extends Component {
   render() {
     const { children } = this.props;

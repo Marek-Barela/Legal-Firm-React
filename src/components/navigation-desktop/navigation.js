@@ -8,13 +8,13 @@ const Desktop = ({ navActive }) => {
   const navStyles = navActive ? navIsActive : navIsUnactive;
   return (
     <ul className={navStyles}>
-      <ListItem text="Home" href="/#home" />
-      <ListItem text="About" href="/#about" />
-      <ListItem text="Feature" href="/#feature" />
-      <ListItem text="Team" href="/#team" />
-      <ListItem text="Why us" href="/#whyus" />
-      <ListItem text="Feedback" href="/#feedback" />
-      <ListItem text="Free consultation" href="/#consultation" />
+      <ListItem text="Home" href="home" />
+      <ListItem text="About" href="about" />
+      <ListItem text="Feature" href="feature" />
+      <ListItem text="Team" href="team" />
+      <ListItem text="Why us" href="whyus" />
+      <ListItem text="Feedback" href="feedback" />
+      <ListItem text="Free consultation" href="consultation" />
     </ul>
   )
 };
